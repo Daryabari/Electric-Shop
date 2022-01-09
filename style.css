@@ -18,7 +18,6 @@
 body {
     font-family: 'Yekan';
     font-size: 1rem;
-    /* background-image: url(./picture/pic15.jpg); */
 
     
 }
@@ -34,7 +33,7 @@ p#in-search ::placeholder{
 .page-top {
     
     background-image: url(./picture/pic15.jpg);
-    background-size: 100% 660px;
+    background-size: cover;
     background-repeat: no-repeat;
     width:100%;
     height: 660px;
@@ -68,26 +67,32 @@ p#in-search ::placeholder{
 #name-co {
     background-color: transparent;
     background-color: rgb(204, 123, 57);
-    opacity: 0.75;
-    width: 25%;
+    background-image: radial-gradient(rgb(253, 213, 104),rgb(204, 123, 57));
+    width: 20%;
     height: 20%;
     text-align: center;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    margin: auto;
+    margin: 13% 60% 0 0;
     animation-name: headco;
-    animation-delay: 1s;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     
        
 }
 
 @keyframes headco {
     from{
-        transform: ;
+        transform: scale(1);
+        opacity: 0.5;
     }
     to {
-        transform: ;
+        transform: scale(1.1);
+        opacity: 1;
     }
+
 }
 
 
